@@ -52,6 +52,10 @@ body {
     color: #2cd8d5;
 }
 
+.App-newdate:focus {
+    outline: 0;
+}
+
 .App-button {
     margin-left: 0px;
     padding: 5px 15px;
@@ -65,4 +69,5 @@ body {
 
 .App-button:hover {
     background-color: #2cd8d5;
+    color: #8E37D7;
 }
