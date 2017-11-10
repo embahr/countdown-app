@@ -19,18 +19,23 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <div className="App-title">
-                    Countdown to { this.state.deadline }</div>
+                <div className="App-title">Countdown App</div>
+                <div className="App-countdown">
+                    Countdown to { this.state.deadline }
+                </div>
                 <Clock 
                     deadline={ this.state.deadline }
                 />
-                <div>
+                <div className="App-form">
                     <input 
-                        placeholder="new date"
+                        className="App-newdate"
+                        placeholder="Enter a new date"
                         onChange={ event => this.setState({ newDeadline: event.target.value })}    
                     />
-                    <button onClick={ () => this.changeDeadline() }>
-                        Submit
+                    <button 
+                        className="App-button"
+                        onClick={ () => this.changeDeadline() }>
+                        Hit it!
                     </button>
                 </div>
             </div>
